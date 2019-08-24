@@ -8,12 +8,8 @@
 
 import Foundation
 
-enum Help: Error {
-    case me
-}
-
 struct ThrowingType {
-    public static func pleaseError() throws {
-        throw Help.me
+    public static func pleaseCrash() {
+        fatalError("Crash now")
     }
 }

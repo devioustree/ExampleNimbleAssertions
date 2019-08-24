@@ -14,7 +14,7 @@ class NimbleThrowingPackagesTests: XCTestCase {
 
 #if !SWIFT_PACKAGE
     func testExample() {
-        expect { try ThrowingType.pleaseError() }.to(throwAssertion())
+        expect { ThrowingType.pleaseCrash() }.to(throwAssertion())
     }
 #endif
 
